@@ -89,7 +89,7 @@ const Navbar = () => {
             </div>
             <div className="navbar-end">
                 <Link to='/login'>
-                <button className="bg-[#074c3e] text-white border border-[#074c3e] rounded-3xl mr-4 px-6 py-3 font-semibold hover:border-white hover:text-[#074c3e] hover:bg-white flex items-center gap-2">
+                <button className="bg-[#074c3e] text-white border border-[#074c3e] rounded-3xl mr-4 px-6 py-3 text-xs md:text-base font-semibold hover:border-white hover:text-[#074c3e] hover:bg-white flex items-center gap-2">
                 Sing In
                 <LuLogIn className="w-6 h-6"/>
                 </button>
