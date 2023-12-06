@@ -1,43 +1,99 @@
+import { Link, NavLink } from "react-router-dom";
+import logo from "../assets/images/logo.webp"
+import { useEffect, useState } from "react";
+import { LuLogIn } from "react-icons/lu";
+
 
 const Navbar = () => {
+
+
+    const [isScrolled, setIsScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setIsScrolled(window.scrollY > 0);
+    };
+
+    window.addEventListener('scroll', handleScroll);
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
+
+
+
+
+    const navLink = <>
+        <NavLink
+            to="/"
+            className={({ isActive }) =>
+             isActive ? "mr-6 text-[#fcb650] text-lg font-semibold" : "mr-6 text-white text-lg font-semibold"
+            }
+        >
+            Home
+        </NavLink>
+        <NavLink
+            to="/news"
+            className={({ isActive }) =>
+             isActive ? "mr-6 text-[#fcb650] text-lg font-semibold" : "mr-6 text-white text-lg font-semibold"
+            }
+        >
+            News
+        </NavLink>
+        <NavLink
+            to="/about"
+            className={({ isActive }) =>
+             isActive ? "mr-6 text-[#fcb650] text-lg font-semibold" : "mr-6 text-white text-lg font-semibold"
+            }
+        >
+            About
+        </NavLink>
+        <NavLink
+            to="/contact"
+            className={({ isActive }) =>
+             isActive ? "mr-6 text-[#fcb650] text-lg font-semibold" : "mr-6 text-white text-lg font-semibold"
+            }
+        >
+            Contact
+        </NavLink>
+        
+    </>;
+
+
+
+
+
     return (
-        <div className="navbar  fixed">
+        <div className={`navbar fixed max-w-[1620px] px-4 md:px-10 py-4 md:py-6 ${
+            isScrolled ? 'bg-black' : 'bg-none'
+          }`}>
             <div className="navbar-start">
                 <div className="dropdown">
-                    <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
+                    <div tabIndex={0} role="button" className="btn btn-ghost text-white lg:hidden">
                         <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
                     </div>
-                    <ul tabIndex={0} className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
-                        <li><a>Item 1</a></li>
-                        <li>
-                            <a>Parent</a>
-                            <ul className="p-2">
-                                <li><a>Submenu 1</a></li>
-                                <li><a>Submenu 2</a></li>
-                            </ul>
-                        </li>
-                        <li><a>Item 3</a></li>
+                    <ul tabIndex={0} className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-black rounded-box w-52">
+                        <li>{navLink}</li>
                     </ul>
                 </div>
-                <a className="btn btn-ghost text-xl">daisyUI</a>
+                <Link>
+                <img src={logo} alt="" />
+                </Link>
             </div>
             <div className="navbar-center hidden lg:flex">
-                <ul className="menu menu-horizontal px-1">
-                    <li><a>Item 1</a></li>
-                    <li>
-                        <details>
-                            <summary>Parent</summary>
-                            <ul className="p-2">
-                                <li><a>Submenu 1</a></li>
-                                <li><a>Submenu 2</a></li>
-                            </ul>
-                        </details>
-                    </li>
-                    <li><a>Item 3</a></li>
+                <ul className=" px-1">
+                    <li>{navLink}</li>
                 </ul>
             </div>
             <div className="navbar-end">
-                <a className="btn">Button</a>
+                <Link to='/login'>
+                <button className="bg-[#074c3e] text-white border border-[#074c3e] rounded-3xl mr-4 px-6 py-3 font-semibold hover:border-white hover:text-[#074c3e] hover:bg-white flex items-center gap-2">
+                Sing In
+                <LuLogIn className="w-6 h-6"/>
+                </button>
+                </Link>
             </div>
         </div>
     );
