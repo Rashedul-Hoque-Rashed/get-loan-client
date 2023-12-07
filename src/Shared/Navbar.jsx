@@ -35,6 +35,14 @@ const Navbar = () => {
             Home
         </NavLink>
         <NavLink
+            to="/services"
+            className={({ isActive }) =>
+             isActive ? "mr-6 text-[#fcb650] text-lg font-semibold" : "mr-6 text-white text-lg font-semibold"
+            }
+        >
+            Services
+        </NavLink>
+        <NavLink
             to="/news"
             className={({ isActive }) =>
              isActive ? "mr-6 text-[#fcb650] text-lg font-semibold" : "mr-6 text-white text-lg font-semibold"
@@ -66,7 +74,7 @@ const Navbar = () => {
 
 
     return (
-        <div className={`navbar fixed max-w-[1620px] px-4 md:px-10 py-4 md:py-6 ${
+        <div className={`navbar fixed max-w-[1620px] px-4 md:px-10 py-4 md:py-6 z-10 ${
             isScrolled ? 'bg-black' : 'bg-none'
           }`}>
             <div className="navbar-start">

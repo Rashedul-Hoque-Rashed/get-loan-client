@@ -1,4 +1,4 @@
-import icon from '../../assets/icons/title_vector.webp'
+import icon from '../../../assets/icons/title_vector.webp'
 import { CiCalculator2 } from "react-icons/ci";
 import { LuArrowUpRight } from "react-icons/lu";
 
