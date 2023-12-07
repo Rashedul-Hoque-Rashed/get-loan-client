@@ -11,7 +11,7 @@ import { Link } from "react-router-dom";
 const Footer = () => {
   return (
     <div className="bg-[#03211b]">
-      <footer className="footer py-20 px-10">
+      <footer className="footer py-20 px-4 md:px-10 max-w-[1620px] mx-auto">
         <nav>
           <img src={logo} alt="" />
           <p className="text-white max-w-xs font-semibold my-4">Welcome to Finview, your trusted resource for financial loan reviews and comparisons. Our dedicated team of experts analyzes</p>
@@ -47,7 +47,7 @@ const Footer = () => {
           <Link to='/blog' className="text-white cursor-pointer text-lg font-semibold hover:text-[#fcb650]">Blog</Link>
         </nav>
       </footer>
-      <footer className="flex px-10 py-4 border-t border-[#ffffff1e] items-center flex-col-reverse md:flex-row justify-between gap-6">
+      <footer className="flex px-4 md:px-10 py-4 border-t border-[#ffffff1e] items-center flex-col-reverse md:flex-row justify-between gap-6 max-w-[1620px] mx-auto">
         <aside className="items-center grid-flow-col">
           <p className="text-white font-semibold">Copyright © {new Date().getFullYear()} <span className="text-[#fcb650]">FINVIEW</span>. Designed By  <span className="text-[#fcb650]">Rashedul Hoque</span></p>
         </aside>

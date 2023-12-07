@@ -74,9 +74,10 @@ const Navbar = () => {
 
 
     return (
-        <div className={`navbar fixed max-w-[1620px] px-4 md:px-10 py-4 md:py-6 z-10 ${
+        <div className={`fixed max-w-full top-0 left-0 right-0 mx-auto z-10  ${
             isScrolled ? 'bg-black' : 'bg-none'
           }`}>
+            <div className={`navbar  max-w-[1620px] top-0 left-0 right-0 mx-auto px-4 md:px-10 py-4 md:py-6 `}>
             <div className="navbar-start">
                 <div className="dropdown">
                     <div tabIndex={0} role="button" className="btn btn-ghost text-white lg:hidden">
@@ -97,12 +98,13 @@ const Navbar = () => {
             </div>
             <div className="navbar-end">
                 <Link to='/login'>
-                <button className="bg-[#074c3e] text-white border border-[#074c3e] rounded-3xl mr-4 px-6 py-3 text-xs md:text-base font-semibold hover:border-white hover:text-[#074c3e] hover:bg-white flex items-center gap-2">
+                <button className="bg-[#074c3e] text-white border border-[#074c3e] rounded-full mr-4 px-6 py-3 text-xs md:text-base font-semibold hover:border-white hover:text-[#074c3e] hover:bg-white flex items-center gap-2">
                 Sing In
                 <LuLogIn className="w-6 h-6"/>
                 </button>
                 </Link>
             </div>
+        </div>
         </div>
     );
 };

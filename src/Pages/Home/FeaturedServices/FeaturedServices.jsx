@@ -225,7 +225,7 @@ const FeaturedServices = () => {
 
 
     return (
-        <div className="my-24">
+        <div className="my-24 px-4 md:px-10 max-w-[1620px] mx-auto">
             <SectionHeader
                 subTitle='Featured Services'
                 title='Empowering You with Loan Knowledge and Comparison Tools'
@@ -261,7 +261,7 @@ const FeaturedServices = () => {
                             <img className="w-6 h-6" src={loan.icons} alt="" />
                             </div>
                             <h2 className="text-2xl font-bold hover:text-[#fcb650] cursor-pointer">{loan.title}</h2>
-                            <p className="my-6 min-h-[96px]">{loan.description.length > 70 ? loan.description.slice(0,70) + '...' : loan.description}</p>
+                            <p className="my-6 min-h-[96px]">{loan.description.length > 100 ? loan.description.slice(0, 100) + '...' : loan.description}</p>
                             <button className="rounded-full bg-white p-3 text-[#074c3e] hover:bg-[#fcb650] hover:text-white">
                                 <MdNavigateNext className="w-6 h-6"/>
                             </button>
@@ -269,7 +269,7 @@ const FeaturedServices = () => {
                         </div>
                     </SwiperSlide>)
                 }
-                <div className="mb-20"></div>
+                <div className="mb-10"></div>
 
             </Swiper>
         </div>
