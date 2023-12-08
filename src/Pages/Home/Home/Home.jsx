@@ -1,5 +1,6 @@
 import OurApp from "../../OurApp/OurApp";
 import AboutUs from "../AboutUs/AboutUs";
+import FAQ from "../FAQ/FAQ";
 import FeaturedServices from "../FeaturedServices/FeaturedServices";
 import Header from "../Header/Header";
 import Testimonials from "../Testimonials/Testimonials";
@@ -17,6 +18,7 @@ const Home = () => {
             <AboutUs/>
             <Testimonials/>
             <OurApp/>
+            <FAQ/>
         </div>
     );
 };
