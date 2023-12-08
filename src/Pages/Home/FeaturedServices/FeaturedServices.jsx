@@ -1,15 +1,10 @@
 import SectionHeader from "../../../Components/SectionHeader/SectionHeader";
 import { Swiper, SwiperSlide } from 'swiper/react';
-
-// Import Swiper styles
 import 'swiper/css';
 import 'swiper/css/free-mode';
 import 'swiper/css/pagination';
-
 import './FeaturedServices.css';
-
-// import required modules
-import { FreeMode, Pagination } from 'swiper/modules';
+import { Autoplay, FreeMode, Pagination } from 'swiper/modules';
 import { MdNavigateNext } from "react-icons/md";
 
 
@@ -250,7 +245,8 @@ const FeaturedServices = () => {
                 pagination={{
                     clickable: true,
                 }}
-                modules={[FreeMode, Pagination]}
+                autoplay={{ delay: 1500, disableOnInteraction: false }}
+                modules={[FreeMode, Pagination, Autoplay]}
                 className="mySwiper"
             >
                 {

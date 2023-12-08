@@ -1,6 +1,5 @@
 import icon from '../../../assets/icons/title_vector.webp'
 import aboutUsImg from "../../../assets/images/about_us.webp"
-import { FiCheckCircle } from "react-icons/fi";
 import { LuArrowUpRight } from 'react-icons/lu';
 import icon2 from '../../../assets/icons/icon2.png'
 import icon3 from '../../../assets/icons/icon3.png'
