@@ -1,3 +1,4 @@
+import OurApp from "../../OurApp/OurApp";
 import AboutUs from "../AboutUs/AboutUs";
 import FeaturedServices from "../FeaturedServices/FeaturedServices";
 import Header from "../Header/Header";
@@ -15,6 +16,7 @@ const Home = () => {
             <WorkingProcess/>
             <AboutUs/>
             <Testimonials/>
+            <OurApp/>
         </div>
     );
 };
