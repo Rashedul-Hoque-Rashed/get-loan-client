@@ -256,7 +256,7 @@ const FeaturedServices = () => {
                 {
                     loanData.map(loan => <SwiperSlide className="px-6 py-10" key={loan.title}>
                         <div className="border-2 p-4 rounded-xl">
-                        <div className="px-4 py-8 bg-base-200 rounded-xl hover:text-white hover:bg-[#074c3e]">
+                        <div className="px-4 py-8 bg-base-200 text-[#222e48] rounded-xl hover:text-white hover:bg-[#074c3e]">
                             <div className="h-20 w-20 mx-auto bg-white p-3 rounded-full mb-6">
                             <img className="w-6 h-6" src={loan.icons} alt="" />
                             </div>

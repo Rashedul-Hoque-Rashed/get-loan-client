@@ -1,6 +1,7 @@
 import FeaturedServices from "../FeaturedServices/FeaturedServices";
 import Header from "../Header/Header";
 import WhyUs from "../WhyUs/WhyUs";
+import WorkingProcess from "../WorkingProcess/WorkingProcess";
 
 
 const Home = () => {
@@ -9,6 +10,7 @@ const Home = () => {
             <Header/>
             <FeaturedServices/>
             <WhyUs/>
+            <WorkingProcess/>
         </div>
     );
 };
