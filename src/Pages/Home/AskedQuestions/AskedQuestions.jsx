@@ -1,7 +1,7 @@
 import SectionHeader from "../../../Components/SectionHeader/SectionHeader";
 
 
-const FAQ = () => {
+const AskedQuestions = () => {
 
     const faqData = [
         {
@@ -55,7 +55,7 @@ const FAQ = () => {
                 description='We have compiled a list of frequently asked questions to provide you with quick and helpful answers. If you have a question that is not addressed below'
             />
 
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-24">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-16">
                 {
                     faqData.map(faq => <details key={faq.question} className="w-full rounded-xl bg-base-200">
                         <summary className="px-6 py-10 text-[#222e48] text-xl font-semibold">
@@ -73,4 +73,4 @@ const FAQ = () => {
     );
 };
 
-export default FAQ;
+export default AskedQuestions;

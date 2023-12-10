@@ -1,5 +1,5 @@
-import icon from '../../assets/icons/title_vector.webp'
-import ourApp from "../../assets/images/ourApp.webp"
+import icon from '../../../assets/icons/title_vector.webp'
+import ourApp from "../../../assets/images/ourApp.webp"
 import { TbPointFilled } from "react-icons/tb";
 import { BiLogoPlayStore } from "react-icons/bi";
 import { FaApple } from "react-icons/fa";
