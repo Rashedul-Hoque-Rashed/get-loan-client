@@ -1,4 +1,4 @@
-import logo from "../assets/images/logo.webp"
+import logo from "../../assets/images/logo.webp"
 import { FaFacebook, FaInstagram, FaLinkedin, FaPinterest, FaTwitter } from "react-icons/fa";
 import { BiSolidPhoneCall } from "react-icons/bi";
 import { HiOutlineMailOpen } from "react-icons/hi";
@@ -49,7 +49,7 @@ const Footer = () => {
       </footer>
       <footer className="flex px-4 md:px-10 py-4 border-t border-[#ffffff1e] items-center flex-col-reverse md:flex-row justify-between gap-6 max-w-[1620px] mx-auto">
         <aside className="items-center grid-flow-col">
-          <p className="text-white font-semibold">Copyright © {new Date().getFullYear()} <span className="text-[#fcb650]">FINVIEW</span>. Designed By  <span className="text-[#fcb650]">Rashedul Hoque</span></p>
+          <p className="text-white font-semibold">Copyright © {new Date().getFullYear()} <span className="text-[#fcb650]">FINVIEW</span>.</p>
         </aside>
         <nav className="md:place-self-center md:justify-self-end">
           <div className="flex flex-wrap gap-4 justify-center">

@@ -1,5 +1,5 @@
 import { Link, NavLink } from "react-router-dom";
-import logo from "../assets/images/logo.webp"
+import logo from "../../assets/images/logo.webp"
 import { useEffect, useState } from "react";
 import { LuLogIn } from "react-icons/lu";
 
@@ -77,7 +77,7 @@ const Navbar = () => {
         <div className={`fixed max-w-full top-0 left-0 right-0 mx-auto z-10  ${
             isScrolled ? 'bg-black' : 'bg-none'
           }`}>
-            <div className={`navbar  max-w-[1620px] top-0 left-0 right-0 mx-auto px-4 md:px-10 py-4 md:py-6 `}>
+            <div className='navbar  max-w-[1620px] top-0 left-0 right-0 mx-auto px-4 md:px-10 py-4 md:py-6'>
             <div className="navbar-start">
                 <div className="dropdown">
                     <div tabIndex={0} role="button" className="btn btn-ghost text-white lg:hidden">

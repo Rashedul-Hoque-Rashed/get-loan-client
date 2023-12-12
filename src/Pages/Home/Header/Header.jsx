@@ -1,6 +1,7 @@
 import icon from '../../../assets/icons/title_vector.webp'
 import { CiCalculator2 } from "react-icons/ci";
 import { LuArrowUpRight } from "react-icons/lu";
+import banner from '../../../assets/images/banner.webp'
 
 
 
@@ -27,7 +28,7 @@ const Header = () => {
                 </div>
             </div>
             <div className='flex-1'>
-<img src="https://finview-bootstrap.vercel.app/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fhero_img.8f43f92c.png&w=750&q=75" alt="" />
+<img src={banner} alt="" />
             </div>
         </div>
         </div>
