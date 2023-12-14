@@ -4,10 +4,12 @@ import { Link } from 'react-router-dom';
 import { LuArrowUpRight } from 'react-icons/lu';
 import Navbar from '../Shared/Navbar';
 import Footer from '../Shared/Footer';
+import Scroll from '../../Components/SectionHeader/Scroll';
 
 const Error = () => {
     return (
         <div className='overflow-hidden'>
+            <Scroll/>
             <Navbar/>
             <div className='bg-[#03211b] overflow-x-hidden'>
                 <div className="flex flex-col md:flex-row items-center justify-between px-4 md:px-10 pt-32 pb-28 gap-10 max-w-[1620px] mx-auto">
