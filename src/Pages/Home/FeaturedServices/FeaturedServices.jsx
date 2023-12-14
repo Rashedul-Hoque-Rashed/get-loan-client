@@ -6,13 +6,13 @@ import 'swiper/css/pagination';
 import './FeaturedServices.css';
 import { Autoplay, FreeMode, Pagination } from 'swiper/modules';
 import { MdNavigateNext } from "react-icons/md";
-import ServicesData from "../../../Hooks/ServicesData/ServicesData";
 import { Link } from "react-router-dom";
+import UseServicesData from "../../../Hooks/UseServicesData";
 
 
 const FeaturedServices = () => {
 
-    const loanData = ServicesData();
+    const loanData = UseServicesData();
 
 
     return (

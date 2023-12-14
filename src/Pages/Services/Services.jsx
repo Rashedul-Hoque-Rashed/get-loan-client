@@ -1,12 +1,12 @@
 import { MdNavigateNext } from 'react-icons/md';
-import ServicesData from '../../Hooks/ServicesData/ServicesData';
 import banner from '../../assets/images/service_banner.webp'
 import { Link } from 'react-router-dom';
+import UseServicesData from '../../Hooks/UseServicesData';
 
 const Services = () => {
 
 
-    const servicesData = ServicesData();
+    const servicesData = UseServicesData();
 
 
     return (
