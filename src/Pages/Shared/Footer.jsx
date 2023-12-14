@@ -10,7 +10,7 @@ import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
-    <div className="bg-[#03211b] overflow-hidden">
+    <div className="bg-[#03211b] overflow-x-hidden">
       <footer className="footer py-20 px-4 md:px-10 max-w-[1620px] mx-auto">
         <nav data-aos="fade-right" data-aos-duration="2000">
           <img src={logo} alt="" />
