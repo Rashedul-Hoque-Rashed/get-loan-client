@@ -47,7 +47,7 @@ const AskedQuestions = () => {
     ]
 
     return (
-        <div className="my-24 px-4 md:px-10 max-w-[1620px] mx-auto">
+        <div data-aos="zoom-in" data-aos-duration="2000" className="my-24 px-4 md:px-10 max-w-[1620px] mx-auto overflow-x-hidden">
 
             <SectionHeader
                 subTitle='Frequently Asked Questions'

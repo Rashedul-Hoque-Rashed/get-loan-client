@@ -11,20 +11,20 @@ const Services = () => {
 
     return (
         <div>
-            <div className='bg-[#03211b]'>
+            <div className='bg-[#03211b] overflow-x-hidden'>
                 <div className="flex flex-col md:flex-row items-center justify-between px-4 md:px-10 pt-32 pb-28 gap-10 max-w-[1620px] mx-auto">
-                    <div className="">
+                    <div data-aos="fade-right" data-aos-duration="2000" className="">
                         <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold my-6 leading-snug text-white">Services</h2>
                         <p className="text-lg lg:text-xl font-semibold mb-6 text-white">Home &gt; Pages &gt; <span className="text-[#fcb650]">Services</span></p>
                     </div>
-                    <div className=''>
+                    <div data-aos="fade-left" data-aos-duration="2000" className=''>
                         <img src={banner} alt="" />
                     </div>
                 </div>
             </div>
             <div className='px-4 md:px-10 pt-32 pb-28 max-w-[1620px] mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6'>
 {
-    servicesData.map(loan => <div key={loan._id} className="border-2 p-4 rounded-xl text-center">
+    servicesData.map(loan => <div data-aos="zoom-in" data-aos-duration="2000" key={loan._id} className="border-2 p-4 rounded-xl text-center">
     <div className="px-4 py-8 bg-base-200 text-[#222e48] rounded-xl hover:text-white hover:bg-[#074c3e]">
         <div className="h-20 w-20 mx-auto bg-white p-3 rounded-full mb-6">
         <img className="w-16 h-16" src={loan.icons} alt="" />

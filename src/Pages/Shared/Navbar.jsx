@@ -74,11 +74,11 @@ const Navbar = () => {
 
 
     return (
-        <div className={`fixed max-w-full top-0 left-0 right-0 mx-auto z-10  ${
+        <div className={`fixed max-w-full top-0 left-0 right-0 mx-auto z-10 overflow-hidden ${
             isScrolled ? 'bg-black' : 'bg-none'
           }`}>
             <div className='navbar  max-w-[1620px] top-0 left-0 right-0 mx-auto px-4 md:px-10 py-4 md:py-6'>
-            <div className="navbar-start">
+            <div data-aos="fade-right" data-aos-duration="2000" className="navbar-start">
                 <div className="dropdown">
                     <div tabIndex={0} role="button" className="btn btn-ghost text-white lg:hidden">
                         <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
@@ -91,12 +91,12 @@ const Navbar = () => {
                 <img src={logo} alt="" />
                 </Link>
             </div>
-            <div className="navbar-center hidden lg:flex">
+            <div data-aos="zoom-in" data-aos-duration="2000" className="navbar-center hidden lg:flex">
                 <ul className=" px-1">
                     <li>{navLink}</li>
                 </ul>
             </div>
-            <div className="navbar-end">
+            <div data-aos="fade-left" data-aos-duration="2000" className="navbar-end">
                 <Link to='/login'>
                 <button className="bg-[#074c3e] text-white border border-[#074c3e] rounded-full mr-4 px-6 py-3 text-xs md:text-base font-semibold hover:border-white hover:text-[#074c3e] hover:bg-white flex items-center gap-2">
                 Sing In

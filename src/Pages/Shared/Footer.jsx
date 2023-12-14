@@ -10,9 +10,9 @@ import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
-    <div className="bg-[#03211b]">
+    <div className="bg-[#03211b] overflow-hidden">
       <footer className="footer py-20 px-4 md:px-10 max-w-[1620px] mx-auto">
-        <nav>
+        <nav data-aos="fade-right" data-aos-duration="2000">
           <img src={logo} alt="" />
           <p className="text-white max-w-xs font-semibold my-4">Welcome to Finview, your trusted resource for financial loan reviews and comparisons. Our dedicated team of experts analyzes</p>
           <div className="flex items-center gap-3">
@@ -23,7 +23,7 @@ const Footer = () => {
             <FaInstagram className="w-10 h-10 text-white p-2 rounded-full border border-[#074c3e] hover:bg-[#074c3e]" />
           </div>
         </nav>
-        <nav>
+        <nav data-aos="zoom-out" data-aos-duration="2000">
           <header className="text-2xl font-bold text-white mb-4">Contact</header>
           <div className="flex items-center gap-3">
             <BiSolidPhoneCall className="w-10 h-10 text-white p-2 rounded-full border border-[#074c3e] hover:bg-[#074c3e]" />
@@ -38,7 +38,7 @@ const Footer = () => {
             <h4 className="text-white cursor-pointer text-lg font-semibold hover:text-[#fcb650]">31 Brandy Way, Sutton, SM2 6SE</h4>
           </div>
         </nav>
-        <nav>
+        <nav data-aos="fade-left" data-aos-duration="2000">
           <header className="text-2xl font-bold text-white mb-4">Quick Link</header>
           <Link to='/about' className="text-white cursor-pointer text-lg font-semibold hover:text-[#fcb650]">About us</Link>
           <Link to='/loanReviews' className="text-white cursor-pointer text-lg font-semibold hover:text-[#fcb650]">Loan Reviews</Link>

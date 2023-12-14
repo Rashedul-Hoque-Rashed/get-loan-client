@@ -8,14 +8,14 @@ import { FaApple } from "react-icons/fa";
 
 const OurApp = () => {
     return (
-        <div className='my-24 bg-gradient-to-r from-[#FDF7ED] to-[#E6ECEB] '>
+        <div className='my-24 bg-gradient-to-r from-[#FDF7ED] to-[#E6ECEB] overflow-x-hidden'>
             <div className="px-4 md:px-10 py-28 flex items-center justify-center gap-20 flex-col-reverse lg:flex-row max-w-[1620px] mx-auto">
-            <div className="flex-1">
+            <div data-aos="fade-right" data-aos-duration="2000" className="flex-1">
                 <img src={ourApp} alt="" />
             </div>
 
 
-            <div className="flex-1">
+            <div data-aos="fade-left" data-aos-duration="2000" className="flex-1">
                 <div className='max-w-[856px] mx-auto px-4'>
                     <div className='flex items-center gap-4 justify-start'>
                         <img src={icon} alt="" />
@@ -42,7 +42,7 @@ const OurApp = () => {
                         <h6 className='text-[#404a60] text-xl font-semibold'>Trusted User Reviews</h6>
                     </div>
                 </div>
-                <div className='px-4 flex items-center gap-4'>
+                <div className='px-4 flex flex-col md:flex-row items-center gap-4'>
                 <button className="text-[#074c3e] text-start w-fit border border-[#074c3e] rounded-full px-6 py-3 flex items-center gap-4 hover:text-white hover:bg-[#074c3e]"> 
                 <BiLogoPlayStore className='w-10 h-10' />
                 <p className='text-lg md:text-xl font-bold'>

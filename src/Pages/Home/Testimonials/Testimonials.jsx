@@ -88,7 +88,7 @@ const Testimonials = () => {
 
 
     return (
-        <div className="my-24 px-4 md:px-10 max-w-[1620px] mx-auto">
+        <div data-aos="zoom-out" data-aos-duration="2000" className="my-24 px-4 md:px-10 max-w-[1620px] mx-auto overflow-x-hidden">
             <SectionHeader
                 subTitle='Client Testimonials'
                 title='Success Stories Shared by Our Customers'
@@ -119,7 +119,7 @@ const Testimonials = () => {
             >
                 {
                     reviewData.map(review => <SwiperSlide className="px-6 py-10" key={review.name}>
-                        <div className="border-2 p-4 rounded-xl hover:border-black">
+                        <div className="border-2 p-4 rounded-xl hover:border-black flex">
                             <div className="px-4 py-8 bg-base-200 rounded-xl text-start">
                                 <Rating
                                     initialRating={review.rating}
@@ -129,8 +129,8 @@ const Testimonials = () => {
                                 <p className="text-lg text-[#222e48] my-6 text-start min-h-[100px]">
                                     {review.details}
                                 </p>
-                                <div className="flex items-center justify-between">
-                                    <div className="flex items-center gap-3">
+                                <div className="flex flex-col-reverse md:flex-row items-center justify-between">
+                                    <div className="flex flex-col md:flex-row items-center gap-3">
                                         <div className="w-14 h-14">
                                         <img src={review.img} alt="" className="rounded-full " />
                                         </div>

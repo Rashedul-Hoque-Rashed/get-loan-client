@@ -16,7 +16,7 @@ const FeaturedServices = () => {
 
 
     return (
-        <div className="my-24 px-4 md:px-10 max-w-[1620px] mx-auto">
+        <div data-aos="zoom-out" data-aos-duration="2000" className="my-24 px-4 md:px-10 max-w-[1620px] mx-auto overflow-x-hidden">
             <SectionHeader
                 subTitle='Featured Services'
                 title='Empowering You with Loan Knowledge and Comparison Tools'

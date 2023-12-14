@@ -7,14 +7,14 @@ import { LuArrowUpRight } from 'react-icons/lu';
 
 const WhyUs = () => {
     return (
-        <div className='my-24 bg-gradient-to-r from-[#FDF7ED] to-[#E6ECEB] '>
+        <div className='my-24 bg-gradient-to-r from-[#FDF7ED] to-[#E6ECEB] overflow-x-hidden'>
             <div className="px-4 md:px-10 py-28 flex items-center justify-center gap-20 flex-col-reverse lg:flex-row max-w-[1620px] mx-auto">
-            <div className="flex-1">
+            <div data-aos="fade-right" data-aos-duration="2000" className="flex-1">
                 <img src={whyUsImg} alt="" />
             </div>
 
 
-            <div className="flex-1">
+            <div data-aos="fade-left" data-aos-duration="2000" className="flex-1">
                 <div className='max-w-[856px] mx-auto px-4'>
                     <div className='flex items-center gap-4 justify-start'>
                         <img src={icon} alt="" />

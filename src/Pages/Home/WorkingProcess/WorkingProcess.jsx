@@ -7,7 +7,7 @@ import icon4 from '../../../assets/icons/icon4.png'
 
 const WorkingProcess = () => {
     return (
-        <div className='my-24 bg-gradient-to-r from-[#FDF7ED] to-[#E6ECEB] '>
+        <div data-aos="zoom-in" data-aos-duration="2000" className='my-24 bg-gradient-to-r from-[#FDF7ED] to-[#E6ECEB] overflow-x-hidden'>
             <div className="px-4 md:px-10 py-28 max-w-[1620px] mx-auto">
                 <SectionHeader
                     subTitle='Our Working Process'
