@@ -5,6 +5,7 @@ import Services from "../Pages/Services/Services";
 import ServicesDetails from "../Pages/ServicesDetails/ServicesDetails";
 import Error from "../Pages/Error/Error";
 import Contact from "../Pages/Contact/Contact";
+import About from "../Pages/About/About";
 
 
 const router = createBrowserRouter([
@@ -29,6 +30,10 @@ const router = createBrowserRouter([
       {
         path: '/contact',
         element: <Contact />
+      },
+      {
+        path: '/about',
+        element: <About />
       },
     ]
   },
