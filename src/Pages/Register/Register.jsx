@@ -7,7 +7,7 @@ import { IoMdEye } from "react-icons/io";
 import { IoMdEyeOff } from "react-icons/io";
 
 
-const Login = () => {
+const Register = () => {
 
     const [showPass, setShowPass] = useState(false);
 
@@ -16,8 +16,8 @@ const Login = () => {
             <div className='bg-[#03211b] overflow-x-hidden'>
                 <div className="flex flex-col md:flex-row items-center justify-between px-4 md:px-10 pt-32 pb-28 gap-10 max-w-[1620px] mx-auto">
                     <div data-aos="fade-right" data-aos-duration="2000" className="">
-                        <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold my-6 leading-snug text-white">Sing In</h2>
-                        <p className="text-lg lg:text-xl font-semibold mb-6 text-white">Home &gt; <span className="text-[#fcb650]">Sing In</span></p>
+                        <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold my-6 leading-snug text-white">Sing Up</h2>
+                        <p className="text-lg lg:text-xl font-semibold mb-6 text-white">Home &gt; <span className="text-[#fcb650]">Sing Up</span></p>
                     </div>
                     <div data-aos="fade-left" data-aos-duration="2000" className=''>
                         <img src={banner} alt="" />
@@ -25,14 +25,20 @@ const Login = () => {
                 </div>
             </div>
             <div className="hero px-4 md:px-10 pt-32 pb-28 max-w-[1620px] mx-auto">
-                <div className="hero-content flex-col lg:flex-row-reverse gap-20">
-                    <div data-aos="fade-left" data-aos-duration="2000" className="flex-1">
+                <div className="hero-content flex-col lg:flex-row gap-20">
+                    <div data-aos="fade-right" data-aos-duration="2000" className="flex-1">
                         <img src={loginImg} alt="" />
                     </div>
-                    <div data-aos="fade-right" data-aos-duration="2000" className="card shrink-0 w-full shadow-2xl bg-base-100 flex-1">
-                        <h4 className='px-8 text-2xl font-semibold text-[#222E48] mt-6 mb-3'>Welcome Back!</h4>
-                        <h6 className='px-8 text-[#222E48] font-medium'>Sign in to your account and join us</h6>
+                    <div data-aos="fade-left" data-aos-duration="2000" className="card shrink-0 w-full shadow-2xl bg-base-100 flex-1">
+                        <h4 className='px-8 text-2xl font-semibold text-[#222E48] mt-6 mb-3'>Welcome</h4>
+                        <h6 className='px-8 text-[#222E48] font-medium'>Sign up to your account and join us</h6>
                         <form className="card-body">
+                            <div className="form-control">
+                                <label className="label">
+                                    <span className="label-text">Name</span>
+                                </label>
+                                <input type="text" name='name' placeholder="Enter Your Name" className="input input-bordered rounded-full" required />
+                            </div>
                             <div className="form-control">
                                 <label className="label">
                                     <span className="label-text">Email</span>
@@ -50,12 +56,18 @@ const Login = () => {
                                 }
                                 </button>
                             </div>
-                            <p className='mx-1 text-[#222E48]'>Do you new here? <Link to='/register' className='text-[#074c3e] font-medium hover:underline'>
-                                SignUp
+                            <div className="form-control">
+                                <label className="label">
+                                    <span className="label-text">Photo</span>
+                                </label>
+                                <input type="file" name='photo' className="input input-bordered rounded-full py-2.5" required />
+                            </div>
+                            <p className='mx-1 text-[#222E48]'>Do you have an account? <Link to='/login' className='text-[#074c3e] font-medium hover:underline'>
+                                SignIn
                             </Link></p>
                             <div className="form-control mt-6">
                                 <button className="btn text-[#074c3e] text-start border border-[#074c3e] rounded-full px-6 py-3 flex items-center gap-4 hover:text-white hover:bg-[#074c3e]">
-                                    Login
+                                    Register
                                     <LuArrowUpRight className='w-6 h-6' />
                                 </button>
                             </div>
@@ -67,4 +79,4 @@ const Login = () => {
     );
 };
 
-export default Login;
+export default Register;
