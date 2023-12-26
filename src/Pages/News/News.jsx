@@ -1,6 +1,21 @@
+import { useEffect, useState } from 'react';
 import banner from '../../assets/images/news_banner.webp'
+import UseAxios from './../../Hooks/UseAxios';
 
 const News = () => {
+
+    const [newses, setNewses] = useState([]);
+    const axios = UseAxios();
+    useEffect(() => {
+        axios.get('/newses')
+            .then(res => {
+                setNewses(res.data)
+            })
+    }, [axios])
+
+    console.log(newses)
+
+
     return (
         <div>
             <div className='bg-[#03211b] overflow-x-hidden'>
@@ -14,6 +29,14 @@ const News = () => {
                     </div>
                 </div>
             </div>
+            <div className='px-4 md:px-10 pt-32 pb-28 max-w-[1620px] mx-auto grid grid-cols-1 md:grid-cols-2 gap-6'>
+                    {
+                        newses.map(news => <div key={news._id}>
+                            <img src={news.images} alt="" />
+                            <h2>{news.title}</h2>
+                        </div>)
+                    }
+                </div>
         </div>
     );
 };
