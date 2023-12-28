@@ -45,7 +45,7 @@ const News = () => {
                     newses.map(news => <div key={news._id} className='bg-base-200 rounded-xl pb-6'>
                         <img src={news.img} alt="" className='rounded-t-xl w-full h-96' />
                         <div className='px-4'>
-                        <div className='flex items-center gap-4 mt-6 mb-2
+                        <div className='flex flex-wrap items-center gap-4 mt-6 mb-2
                         '>
                             <p className='text-[#222e48] text-sm flex items-center gap-1'>
                                 <FaRegCalendarAlt className='text-[#074c3e]'/>
