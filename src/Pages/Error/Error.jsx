@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 import { LuArrowUpRight } from 'react-icons/lu';
 import Navbar from '../Shared/Navbar';
 import Footer from '../Shared/Footer';
-import Scroll from '../../Components/SectionHeader/Scroll';
+import Scroll from '../../Components/Scroll/Scroll';
 
 const Error = () => {
     return (

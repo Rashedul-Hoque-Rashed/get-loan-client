@@ -3,7 +3,8 @@ import Navbar from "../Pages/Shared/Navbar";
 import Footer from "../Pages/Shared/Footer";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-import Scroll from "../Components/SectionHeader/Scroll";
+import Scroll from "../Components/Scroll/Scroll";
+
 
 AOS.init();
 

@@ -62,7 +62,7 @@ const News = () => {
                         <hr />
                         <p className='text-[#222e48] my-4'>
                             {
-                                news.descriptions.length > 50 ? news.descriptions.split(0, 50) + '...' : news.descriptions
+                                news.descriptions.length > 150 ? news.descriptions.slice(0, 150) + '.....' : news.descriptions
                             }
                         </p>
                         <Link to={`/news/${news._id}`}>
