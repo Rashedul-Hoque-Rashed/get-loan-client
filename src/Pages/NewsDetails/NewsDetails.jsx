@@ -25,8 +25,8 @@ const NewsDetails = () => {
         window.open(linkedInShareUrl, "_blank");
     };
 
-    
-    
+
+
 
     return (
         <div>
@@ -41,8 +41,8 @@ const NewsDetails = () => {
                     </div>
                 </div>
             </div>
-            <div className="px-4 md:px-10 pt-32 pb-28 max-w-[1620px] mx-auto">
-                <div className='rounded-xl pb-6'>
+            <div className="px-4 md:px-10 pt-32 pb-28 max-w-[1620px] mx-auto grid gap-6 grid-cols-12">
+                <div className='rounded-xl pb-6 col-span-12 lg:col-span-9'>
                     <img src={news.img} alt="" className='rounded-t-xl' />
                     <div className='px-4'>
                         <div className='flex flex-wrap items-center gap-4 mt-6 mb-2
@@ -66,7 +66,7 @@ const NewsDetails = () => {
                             }
                         </p>
                         <hr />
-                        <div className="flex items-center justify-between mt-4">
+                        <div className="flex flex-col md:flex-row md:items-center gap-6 justify-between mt-4">
                             <div className="flex items-center gap-4 text-lg font-bold text-[#222e48]">
                                 Tags: {
                                     news.tags.map((tag, index) => <p key={index} className="px-4 py-2 bg-[#074c3e] rounded-xl text-white text-base font-medium">
@@ -76,11 +76,23 @@ const NewsDetails = () => {
                             </div>
                             <div className="flex items-center gap-4 text-[#074c3e]">
                                 <p className="text-lg font-bold text-[#222e48]">Share:</p>
-                                <FaFacebook onClick={shareOnFacebook} className="w-12 h-12 p-2 border rounded-full border-[#074c3e]"/>
-                                <FaTwitter onClick={shareOnTwitter} className="w-12 h-12 p-2 border rounded-full border-[#074c3e]"/>
-                                <FaLinkedin onClick={shareOnLinkedIn} className="w-12 h-12 p-2 border rounded-full border-[#074c3e]"/>
+                                <FaFacebook onClick={shareOnFacebook} className="w-12 h-12 p-2 border rounded-full border-[#074c3e]" />
+                                <FaTwitter onClick={shareOnTwitter} className="w-12 h-12 p-2 border rounded-full border-[#074c3e]" />
+                                <FaLinkedin onClick={shareOnLinkedIn} className="w-12 h-12 p-2 border rounded-full border-[#074c3e]" />
                             </div>
                         </div>
+                    </div>
+                </div>
+                <div className="rounded-xl pb-6 col-span-12 lg:col-span-3">
+                    <h4 className="text-2xl font-bold text-[#222e48] mb-6">Comments</h4>
+                    <hr />
+                    <div>
+                        {
+                            news.comments.map(comment => <div className="my-4" key={comment.userEmail}>
+                                <h2 className="text-xl font-bold text-[#222e48] my-2">{comment.userName}</h2>
+                                <p className="text-[#222e48] my-2">{comment.comment}</p>
+                            </div>)
+                        }
                     </div>
                 </div>
             </div>
